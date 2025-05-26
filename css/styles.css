@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: mono, sans-serif;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+/* Style the header */
+.header {
+    grid-area: header;
+    padding: 30px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* The grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-areas:
+        'header header header header header'
+        'left left right right right'
+        'footer footer footer footer footer';
+    /* grid-column-gap: 10px; - if you want gap between the columns */
+}
+
+.left,
+.right {
+    padding: 10px;
+}
+
+/* Style the left column */
+.left {
+    grid-area: left;
+}
+
+/* Style the right column */
+.right {
+    grid-area: right;
+}
+
+/* Style the footer */
+.footer {
+    grid-area: footer;
+    padding: 10px;
+    text-align: center;
+}
+
+.hides {
+    display: block;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.hides.unroll {
+    max-height: 1000px;
+    transition: max-height 2s ease-in-out;
+}
+
+.course-description {
+    overflow-wrap: break-word;
+    position: sticky;
+    top: 50%;
+}
+
+.course-container {
+    padding: 8px;
+    line-height: 3em;
+}
+
+.bubble {
+    border-radius: 4px;
+    padding: 0.2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.common {
+    background-color: #91f768;
+}
+
+.rare {
+    background-color: #2fceed;
+}
+
+.unique {
+    background-color: #c179fc;
+}
+
+.bubble.orientation {
+    background-color: #91f768;
+}
+
+.margin2 {
+    background-color: white;
+    margin: 5%;
+}
+
+mark {
+    border-radius: 3px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none; /* no underline */
+}
