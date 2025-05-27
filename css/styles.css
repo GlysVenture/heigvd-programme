@@ -32,6 +32,11 @@ body {
     padding: 10px;
 }
 
+/* Style the middle column */
+.middle {
+    grid-area: middle;
+}
+
 /* Style the left column */
 .left {
     grid-area: left;
@@ -79,27 +84,33 @@ body {
     padding-right: 1em;
     white-space: nowrap;
     overflow: hidden;
+    border-width: 5px;
+    border-style: solid;
 }
 
 .common {
     background-color: #91f768;
+    border-color: #91f768;
 }
 
 .rare {
     background-color: #2fceed;
+    border-color: #2fceed;
 }
 
 .unique {
     background-color: #c179fc;
+    border-color: #c179fc;
 }
 
 .bubble.orientation {
     background-color: #91f768;
+    border-color: #91f768;
 }
 
 .margin2 {
     background-color: white;
-    margin: 5%;
+    margin: 2%;
 }
 
 mark {
